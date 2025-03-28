@@ -68,7 +68,7 @@ public void init() throws PayPalRESTException {
 					.booking(booking)
 					.totalPrice(bookingInitiationDTO.getTotalPrice())
 					.paymentStatus(PaymentStatus.COMPLETED)
-					.paymentMethod(PaymentMethod.CREDIT_CARD)
+					.paymentMethod(PaymentMethod.PAYPAL)
 					.currency(Currency.USD)
 					.transactionId(UUID.randomUUID().toString())
 					.build();
